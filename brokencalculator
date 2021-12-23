@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+double num1;
+double num2;
+string op;
+  cout << "Enter your first number: ";
+  cin >> num1;
+  cout << endl << "Enter your second number: ";
+  cin >> num2;
+  cout << endl << "Enter your operation: ";
+  getline (cin, op);
+  if (op == "+") {
+    cout << num1 << " + " << num2 << " = " << num1 + num2;
+  } else if (op == "-") {
+    cout << num1 << " - " << num2 << " = " << num1 - num2;
+  } else if (op == "*") {
+    cout << num1 << " * " << num2 << " = " << num1 * num2;
+  } else if (op == "/") {
+    cout << num1 << "/" << num2 << " = " << num1 / num2;
+  } else { goto NOTANOP;
+}
+
+
+NOTANOP:cout << "That is not a valid operation.";
+}
