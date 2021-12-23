@@ -64,5 +64,5 @@ string op;
 
 
 NOTANOP:cout << "That is not a valid operation.";
-goto OPERATION
+goto OPERATION;
 }
