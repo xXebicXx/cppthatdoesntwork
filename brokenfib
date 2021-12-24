@@ -1,0 +1,16 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int fib(int num) {
+  double squared = sqrt(5);
+  double fibseq1 = pow(((1 + squared) / 2), num);
+  double fibseq2 = fibseq1 / squared;
+  int fibseq3 = round(fibseq2);
+  cout << fibseq3 << "\n";
+  return 0;
+  }
+
+int main() {
+  fib(25);
+} 
